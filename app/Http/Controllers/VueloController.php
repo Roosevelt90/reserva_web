@@ -71,7 +71,6 @@ class VueloController extends Controller
         $vuelo     = vuelo::find($id);
         $aerolinea = aerolinea::all();
         $ciudad    = ciudad::all();       
-//        return view('vuelo.edit', compact('vuelo', 'aerolinea', 'ciudad'));
         return view('vuelo.edit',
             ["aerolinea" => $aerolinea, "ciudad" => $ciudad, "vuelo" => $vuelo]);
     }

@@ -79,15 +79,13 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Sistema de reservaciones de vuelos
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="{{ url('reserva') }}">Reservaciones</a>
+                    <a href="{{ url('vuelo') }}">Vuelos</a>
+                    <a href="{{ url('aerolinea') }}">Aerolineas</a>
                 </div>
             </div>
         </div>

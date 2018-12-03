@@ -8,6 +8,7 @@
                     <div class="pull-left"><h3>Listado de vuelos</h3></div>
                     <div class="pull-right">
                         <div class="btn-group">
+                            <a href="/" class="btn btn-success" style="margin-right: 10px;">Inicio</a>
                             <a href="{{ route('vuelo.create') }}" class="btn btn-info" >Añadir vuelo</a>
                         </div>
                     </div>

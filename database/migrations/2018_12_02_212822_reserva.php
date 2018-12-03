@@ -16,8 +16,9 @@ class Reserva extends Migration
         Schema::create('reserva',
             function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('numeroReserva');
+            $table->string('numeroReserva');
             $table->integer('numeroSilla');
+            $table->integer('equipajeExtra');
             $table->string('observaciones');
             $table->unsignedInteger('idClase');
             $table->foreign('idClase')->references('id')->on('clase');

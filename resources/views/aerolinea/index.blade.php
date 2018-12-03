@@ -8,6 +8,7 @@
                     <div class="pull-left"><h3>Listado de aerolineas</h3></div>
                     <div class="pull-right">
                         <div class="btn-group">
+                            <a href="/" class="btn btn-success" style="margin-right: 10px;">Inicio</a>
                             <a href="{{ route('aerolinea.create') }}" class="btn btn-info" >Añadir aerolinea</a>
                         </div>
                     </div>
@@ -15,6 +16,7 @@
                         <table id="mytable" class="table table-bordred table-striped">
                             <thead>
                             <th>Nombre</th>
+                            <th>Acciones</th>
                             </thead>
                             <tbody>
                                 @if($aerolineas->count())

@@ -13,12 +13,12 @@ class Vuelo extends Migration
      */
     public function up()
     {
-        Schema::create('vuelos',
+        Schema::create('vuelo',
             function (Blueprint $table) {
             $table->increments('id');
             $table->integer('precio');
             $table->integer('cantidadSillas');
-            $table->timestamp('fechaHoraSalida');            
+            $table->string('fechaHoraSalida');
             $table->unsignedInteger('idAerolinea');
             $table->foreign('idAerolinea')->references('id')->on('aerolinea');
             $table->unsignedInteger('idCiudadOrigen');
