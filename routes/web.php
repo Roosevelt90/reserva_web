@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::resource('aerolinea', 'AerolineaController');
+Route::resource('vuelo', 'VueloController');
+Route::resource('reserva', 'ReservaController');
